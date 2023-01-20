@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
   <title>GeoExplorers!</title>
 
@@ -13,6 +14,7 @@
   <script src="https://kit.fontawesome.com/2eb88ffea0.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div id="layout_nav"></div>
 
@@ -23,96 +25,96 @@
         West Humber Key Clubbers, our next meeting will be on <span class="font-weight-bold">Friday, October 12th<sup>th</sup></span> in Room 160 at 11:40 PM.
       </div>
         -->
-      <!-- <div class="alert alert-info">
+  <!-- <div class="alert alert-info">
         <h3 class="alert-heading font-weight-bold">Next After-School Cleanup</h3>
         Our next after-school cleanup will be <span class="font-weight-bold">Thursday, May 14<sup>th</sup></span> from 3:15 to 4:15 PM. See you there!
       </div> -->
-      
-      <h2 class="font-weight-bold text-center display-4">Welcome to <span class="text-primary">GeoExplorers</h2>
 
-      <h4 class="font-weight-bold">How our Project helps!</h4>
-      <p>
-        TBD
-      </p> 
+  <h2 class="font-weight-bold text-center display-4">Welcome to <span class="text-primary">GeoExplorers</h2>
 
-      <h4 class="font-weight-bold">Our Goal <span class="text-info">You?</span></h4>
-      <p>
-       TBD
-      </p>
+  <h4 class="font-weight-bold">How our Project helps!</h4>
+  <p>
+    TBD
+  </p>
 
-      <h4 class="font-weight-bold">How to Use!</h4>
-      <p>
-        TBD
-      </p> -->
+  <h4 class="font-weight-bold">Our Goal <span class="text-info">You?</span></h4>
+  <p>
+    TBD
+  </p>
 
-      <!-- <h4 id="current_officers" class="font-weight-bold">Who's In Charge?</h4>
+  <h4 class="font-weight-bold">How to Use!</h4>
+  <p>
+    TBD
+  </p> -->
+
+  <!-- <h4 id="current_officers" class="font-weight-bold">Who's In Charge?</h4>
       <p>
         We are a student-run organization, which means that we each report to ourselves and our fellow club members.
         We do however, have seven executive club leaders. These leaders are elected each year by the club's members.
         <br /> -->
-        <div class="table-responsive">
-          <table class="table table-striped table-hover table-bordered text-center">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Standings</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Devansh Jain</th>
-                <td>#1</td>
-              </tr>
-              <tr>
-                <th scope="row">Ankit Bankit</th>
-                <td>#2</td>
-              </tr>
-              <tr>
-                <th scope="row">Richard Nguyen</th>
-                <td>#3</td>
-              </tr>
-              <tr>
-                <th scope="row">To be decided</th>
-                <td>#4</td>
-              </tr>
-              <tr>
-                <th scope="row">To be decided</th>
-                <td>#5</td>
-              </tr>
-              <tr>
-                <th scope="row">To be decided</th>
-                <td>#6</td>
-              </tr>
-              <tr>
-                <th scope="row">To be decided</th>
-                <td>#7</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </p>
+  <div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered text-center">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Standings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Devansh Jain</th>
+          <td>#1</td>
+        </tr>
+        <tr>
+          <th scope="row">Ankit Bankit</th>
+          <td>#2</td>
+        </tr>
+        <tr>
+          <th scope="row">Richard Nguyen</th>
+          <td>#3</td>
+        </tr>
+        <tr>
+          <th scope="row">To be decided</th>
+          <td>#4</td>
+        </tr>
+        <tr>
+          <th scope="row">To be decided</th>
+          <td>#5</td>
+        </tr>
+        <tr>
+          <th scope="row">To be decided</th>
+          <td>#6</td>
+        </tr>
+        <tr>
+          <th scope="row">To be decided</th>
+          <td>#7</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </p>
 
-      <!-- <h4 class="font-weight-bold">What's Being an Officer Like?</h4>
+  <!-- <h4 class="font-weight-bold">What's Being an Officer Like?</h4>
       <p>
         Officers are not that far from regular members. They have the same hour requirements as regular members,
         and they are not necessarily required to go to any of the events either (although it is highly recommended).
         Officers are however, required to suggest at least two volunteer opportunities for the club to participate in over the course of the semester.
       </p>
-    </div> --> 
+    </div> -->
 
-    <div id="layout_footer"></div>
+  <div id="layout_footer"></div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script>
-    $(document).ready(function() {
-      $("#layout_nav").load("layout/nav.html", function() {
+    $(document).ready(function () {
+      $("#layout_nav").load("layout/nav.html", function () {
         $("#whci-menu-btn-times").hide();
         $("#whci-menu-btn-text").html("Menu");
 
-        $("#whci-menu-btn").on("click", function(e) {
+        $("#whci-menu-btn").on("click", function (e) {
           $("#whci-menu-btn-bars").toggle();
           $("#whci-menu-btn-times").toggle();
 
@@ -123,8 +125,9 @@
         });
       });
 
-      $("#layout_footer").load("layout/footer.html", function() { });
+      $("#layout_footer").load("layout/footer.html", function () { });
     });
   </script>
 </body>
+
 </html>

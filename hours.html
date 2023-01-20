@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
   <title>WHCI Key Club - Hours Submission</title>
 
@@ -13,6 +14,7 @@
   <script src="https://kit.fontawesome.com/2eb88ffea0.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div id="layout_nav"></div>
 
@@ -50,13 +52,15 @@
         <div class="form-group row">
           <label for="whci-hour-charge" class="col-sm-2 col-form-label">Reference</label>
           <div class="col-sm-10">
-            <input type="text" id="whci-hour-charge" class="form-control" placeholder="Executive/Person in Charge of Event" required />
+            <input type="text" id="whci-hour-charge" class="form-control"
+              placeholder="Executive/Person in Charge of Event" required />
           </div>
         </div>
         <div class="form-group row">
           <label for="whci-hour-num" class="col-sm-2 col-form-label"># of Hours</label>
           <div class="col-sm-10">
-            <input type="number" id="whci-hour-num" class="form-control" min="0.5" step="0.5" placeholder="Rounded to Half an Hour" required />
+            <input type="number" id="whci-hour-num" class="form-control" min="0.5" step="0.5"
+              placeholder="Rounded to Half an Hour" required />
           </div>
         </div>
         <div class="text-center">
@@ -72,14 +76,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
       $("#whci-hour-temp").hide();
 
-      $("#layout_nav").load("layout/nav.html", function() {
+      $("#layout_nav").load("layout/nav.html", function () {
         $("#whci-menu-btn-times").hide();
         $("#whci-menu-btn-text").html("Menu");
 
-        $("#whci-menu-btn").on("click", function(e) {
+        $("#whci-menu-btn").on("click", function (e) {
           $("#whci-menu-btn-bars").toggle();
           $("#whci-menu-btn-times").toggle();
 
@@ -90,9 +94,9 @@
         });
       });
 
-      $("#layout_footer").load("layout/footer.html", function() { });
+      $("#layout_footer").load("layout/footer.html", function () { });
 
-      $("#whci-hour-form").submit(function(e) {
+      $("#whci-hour-form").submit(function (e) {
         e.preventDefault();
         const whci_name = $("#whci-hour-name").val(), whci_event = $("#whci-hour-event").val(),
           whci_date = $("#whci-hour-date").val(), whci_place = $("#whci-hour-place").val(),
@@ -109,9 +113,9 @@
           method: "GET",
           dataType: "json",
           data: whci_json
-        }).done(function(response, textStatus, jqXHR) {
+        }).done(function (response, textStatus, jqXHR) {
           //console.info("success: " + response);
-        }).fail(function(jqHXR, textStatus, errorThrown) {
+        }).fail(function (jqHXR, textStatus, errorThrown) {
           //console.error("fail: " + errorThrown);
         });
 
@@ -120,9 +124,10 @@
         $("#whci-hour-temp").show();
         $("#whci-hour-form").hide();
 
-        setTimeout(function() { window.location.reload(true); }, 3000);
+        setTimeout(function () { window.location.reload(true); }, 3000);
       });
     });
   </script>
 </body>
+
 </html>
